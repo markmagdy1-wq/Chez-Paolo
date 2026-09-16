@@ -91,7 +91,7 @@ export default function Page() {
     const lines = cart.map((item) => `${item.quantity}x ${item.name} - ${currency(item.price * item.quantity)}`).join('\n')
     const details = fulfillment === 'Delivery' ? 'Delivery requested' : `${fulfillment} — arrival at ${arrival}`
     const message = `Hello Chez Paolo, I would like to place an order:\n\n${lines}\n\nTotal: ${currency(total)}\nService: ${details}`
-    window.open(`https://wa.me/201214702221?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer')
+    window.open(`https://wa.me/201018339684?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer')
     setConfirmed(true)
   }
 
